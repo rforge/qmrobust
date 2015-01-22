@@ -1,0 +1,4 @@
+import(stats,graphics,robustbase, utils)
+importFrom("stats", lm)
+
+export(showd)

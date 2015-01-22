@@ -1,0 +1,18 @@
+Package: qmrobust
+Type: Package
+Title: Quality Management: Examples from the concrete industry
+Version: 1.0
+Date: 2015-01-08
+Author: Werner A. Stahel, Seminar f. Statistik, ETH Zurich, Switzerland
+Maintainer: Werner A. Stahel <stahel@stat.math.ethz.ch>
+Depends: R (>= 3.0.0), graphics
+Imports: stats
+Suggests: lme4, robustbase, outliers
+Description: Quality management in the industry of producing concrete
+  needs one- and two-sample inference, quantile estimation, the analysis of
+  interlaboratory studies, and regression methods. 
+  Some data sets from this industry are included to illustrate how this is
+  done (through a vignette and the examples section in the help files of the
+  data sets)
+License: GPL-2
+LazyData: yes

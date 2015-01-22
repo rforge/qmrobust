@@ -1,0 +1,30 @@
+qmrobust
+
+mamae
+-- misc
+-- svn installation
+-- dozf nä si, lenox
+
+Die Datensätze, klar.
+Outlier rejection: nach bisheriger Norm. Robust?
+Zwei-Stichproben-Vergleiche: t und Wilc-Mann-W
+binomial
+Simulation?
+Ringversuch
+
+datasets
+
+inference on the mean
+estimation of a quantile
+qualitative testing (binomial)
+
+two samples
+
+outliers
+  qqplot
+  tests
+  rejection
+
+interlaboratory studies
+
+regression
