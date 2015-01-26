@@ -8,8 +8,8 @@ Plot an interlab object
 Plots the data and statistics of an interlaboratory study
 }
 \usage{
-\method{plot}{interlab}(x, data=NULL, sd = TRUE, difflimits = TRUE,
-     grouplabels = NULL, cex.text = 1.1, col = "blue", ...)
+\method{plot}{interlab}(x, data=NULL, sd = TRUE, difflimits = FALSE,
+     ylim = NULL, grouplabels = NULL, cex.text = 1.1, col = "blue", ...)
 }
 \arguments{
   \item{x}{

@@ -34,8 +34,11 @@ interlabstats(object, ...)
     measurement and \code{group}  is the laboraotory factor}
   \item{data}{dataset containing the variables used in \code{formula}}
   \item{subset}{usual subset argument, passed to \code{model.frame}}
+  \item{x}{object of class \code{interlab} to be printed}
   \item{groups}{for \code{print.interlab}: should statistics for groups
     be printed (if available)?}
+  \item{...}{further arguments to be passed to the methods or to
+  \code{print.default}}
 }
 \details{
   By \code{interlab.formula}, the estimated quantities are obtained from
