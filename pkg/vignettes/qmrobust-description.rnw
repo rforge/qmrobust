@@ -6,25 +6,17 @@
 % \VignetteDepends{lme4}
 % \VignetteDepends{robustlmm}
 % \VignetteDepends{outliers}
-\usepackage{a4,parskip}
+%%- \usepackage{a4,parskip}
 \usepackage{graphicx}
 \usepackage{Sweave}
-\usepackage{sfsbib}
-\usepackage{texab}
-\usepackage{/u/stahel/tex/kurs}
-%%- \providecommand{\T}{\texttt}
-%%- \providecommand{\ul}{\textbf}
-%%- \providecommand{\Tit}[1]{\textbf{#1}\hspace{1em}}
-%%- \providecommand{\Hneed}[1]{\penalty-8000\hskip#1 plus10pt\penalty-8000\hskip-#1}
-%%- \providecommand{\Vneed}[1]{\penalty-5000\vskip#1%\vskip 0pt plus20pt
-%%- \penalty-5000\vspace{-#1}}
-%%- \providecommand{\vc}[1]{\kern-1pt\underline{\kern1pt#1\kern-1pt}\kern1pt}
-%%- \providecommand{\bmath}[1]{\relax\ifmmode{\mbox{\boldmath $#1$}}%
-%%-   \else{\boldmath $#1$}\fi}    
-%%- \providecommand{\mx}[1]{\bmath#1}  
-%%- \providecommand{\sups}[1]{^{(#1)}}
-%%- \providecommand{\wb}[1]{{}\if Y#1\overline{Y}\else
-%%- \kern0.2em\overline{\kern-0.2em#1}\fi}
+\usepackage[a4paper, text={15cm,24cm}]{geometry}
+%%- \usepackage{sfsbib}
+%%- \usepackage{texab}
+%%- \usepackage{/u/stahel/tex/kurs}
+\providecommand{\T}{\texttt}
+\providecommand{\sups}[1]{^{(#1)}}
+\providecommand{\wb}[1]{{}\if Y#1\overline{Y}\else
+\kern0.2em\overline{\kern-0.2em#1}\fi}
 
 \providecommand{\code}[1]{\texttt{#1}}
 \def\Cite{\cite}
@@ -41,7 +33,7 @@
 \bibliographystyle{sfsbib}      \citationstyle{dcu}
 %% ========================================================
 %\SweaveOpts{concordance=TRUE}
-\SweaveOpts{prefix.string=fig/p-, height=4.5}  
+\SweaveOpts{prefix.string=fig/p, height=4.5}  
 \setkeys{Gin}{width=1\textwidth} %% 0.8 default , height=0.7\textwidth 
 %% ========================================================
 \title{\vspace*{-10mm}
@@ -77,7 +69,7 @@ industry. The package \T{qmrobust} presently consists of the data sets
 used in that text and shows how the methods are obtained in R.
 
 <<require,fig=FALSE>>=
-require(qmrobust)
+require(qmrobust, lib="../../qmrobust.Rcheck")
 @
 
 \section{Datasets}
@@ -347,10 +339,10 @@ results adequately.
 A robust version of the maximum likelihood method is obtained from the
 package \code{robustlmm}, function \code{rlmer}.
 <<interlabroblme>>=
-# require(robustlmm)
-# r.lmmrob <- rlmer(perm.log~(1|team), data=dd) 
-# save(r.lmmrob,file="r.lmmrob")
-load("r.lmmrob")
+require(robustlmm)
+r.lmmrob <- rlmer(perm.log~(1|team), data=dd) 
+save(r.lmmrob,file="r.lmmrob.rda")
+#load("r.lmmrob")
 ## summary(r.lmmrob)
 interlabstats(r.lmmrob)
 @ 
@@ -388,7 +380,7 @@ r.pred <- predict(r.lm, newdata=xdf, interval="prediction")
 matlines(x,r.pred[,2:3], lty=5, col="red", lwd=2)
 @ 
 
-\bibliography{/u/stahel/proj/statintro/concrete.bib}
+\bibliography{qmrobust.bib}
 
 \end{document}
 

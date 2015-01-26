@@ -63,9 +63,9 @@ interlabstats(object, ...)
 \references{
 Stahel ...
 }
-\author{{Werner A. Stahel, ETH Zurich}
-\seealso{\code{\link{plot.interlab}, \code{\link{lmer}}, \code{\link{rlmer}} 
-%%}
+\author{Werner A. Stahel, ETH Zurich}
+\seealso{\code{\link{plot.interlab}}, \code{\link{lmer}}, \code{\link{rlmer}}} 
+
 \examples{
 data(d.perm)
 dd <- d.perm[d.perm$section=="w.1",]

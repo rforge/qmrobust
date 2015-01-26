@@ -5,9 +5,8 @@ Version: 1.0
 Date: 2015-01-08
 Author: Werner A. Stahel, Seminar f. Statistik, ETH Zurich, Switzerland
 Maintainer: Werner A. Stahel <stahel@stat.math.ethz.ch>
-Depends: R (>= 3.0.0), graphics
+Depends: R (>= 3.0.0), graphics,  lme4, robustlmm, outliers
 Imports: stats
-Suggests: lme4, robustbase, outliers
 Description: Quality management in the industry of producing concrete
   needs one- and two-sample inference, quantile estimation, the analysis of
   interlaboratory studies, and regression methods. 

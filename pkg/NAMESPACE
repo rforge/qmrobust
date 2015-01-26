@@ -1,4 +1,7 @@
-import(stats,graphics,robustbase, utils)
-importFrom("stats", lm)
+import(stats,graphics)
+importFrom("lme4",lmer)
+importFrom("robustlmm",rlmer)
+importFrom("outliers",grubbs.test)
 
-export(showd)
+export(showd, interlabstats, interlabstats.default, interlabstats.formula,
+       plot.interlab, print.interlab)

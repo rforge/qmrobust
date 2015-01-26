@@ -27,7 +27,7 @@ freeway viaduct, measured for a \eqn{latex}{5\times 40} grid.
 %%- %%  ~~ If necessary, more details than the __description__ above ~~
 %%- }
 \source{
-  Monteiro, A. V., Gon\c calves, A. and Gulikers, J. (2014).
+  Monteiro, A. V., Goncalves, A. and Gulikers, J. (2014).
   Statistical bases for assessing the cover depth in reinforced concrete
   structures.
   Performance-Based Specifications and Control of Concrete Durability,

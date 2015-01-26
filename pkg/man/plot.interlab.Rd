@@ -38,7 +38,7 @@ Plots the data and statistics of an interlaboratory study
 \references{
 %% ~put references to the literature/web site here ~
 }
-\author{{Werner A. Stahel, ETH Zurich}
+\author{Werner A. Stahel, ETH Zurich}
 \seealso{\code{\link{interlabstats}}}
 \examples{
 data(d.perm)

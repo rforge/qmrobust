@@ -2,7 +2,7 @@ interlabstats <- function(object, ...)
   UseMethod("interlabstats")
 
 interlabstats.default <-
-  function(object)
+  function(object, ...)
   {
     if (!class(object)%in%c("lmerMod","rlmerMod"))
       stop("inadequate argument 'object'")
